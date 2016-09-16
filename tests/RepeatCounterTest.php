@@ -71,5 +71,18 @@
           //Assert
           $this->assertEquals("Please enter a word to search.", $result);
       }
+      function test_null_search()
+      {
+          //Arrange
+          $test_RepeatCounter = new RepeatCounter;
+          $input1 = "String";
+          $input2 = "";
+
+          //Act
+          $result =  $test_RepeatCounter->countRepeats($input1, $input2);
+          //
+          //Assert
+          $this->assertEquals("Please enter a sentence.", $result);
+      }
   }
 ?>

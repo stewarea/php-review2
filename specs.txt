@@ -21,7 +21,7 @@ Input: "", String;
 Output: "Please enter a word to search."
 
 6. Testing a null search field
-Input: String, " ";
+Input: String, "";
 Output: "Please enter a sentence."
 
 7. Testing a case sensitive search:
