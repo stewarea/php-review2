@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Word Counter</title>
   </head>
   <body>
-    <h1></h1>
+    <h1>Enter a word</h1>
+    <h3>Enter a word in the first form and a sentence in the second to see how many times the word is found in the sentence!</h3>
     <form action='/results' method='post'>
-      <label for='inputNum'></label>
-      <input type='number' id='inputNum' name='inputNum'>
+      <label for='input1'>Enter a word</label>
+      <input type='text' id='input1' name='input1'>
+      <label for='input2'>Enter a sentence</label>
+      <input type='text' id='input2' name='input2'>
       <button type='submit'>Submit</button>
     </form>
 
