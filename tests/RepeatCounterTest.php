@@ -58,31 +58,44 @@
     //       //Assert
     //       $this->assertEquals(2, $result);
     //   }
-      function test_null_input()
+    //   function test_null_input()
+    //   {
+    //       //Arrange
+    //       $test_RepeatCounter = new RepeatCounter;
+    //       $input1 = "";
+    //       $input2 = "String";
+      //
+    //       //Act
+    //       $result =  $test_RepeatCounter->countRepeats($input1, $input2);
+    //       //
+    //       //Assert
+    //       $this->assertEquals("Please enter a word to search.", $result);
+    //   }
+    //   function test_null_search()
+    //   {
+    //       //Arrange
+    //       $test_RepeatCounter = new RepeatCounter;
+    //       $input1 = "String";
+    //       $input2 = "";
+      //
+    //       //Act
+    //       $result =  $test_RepeatCounter->countRepeats($input1, $input2);
+    //       //
+    //       //Assert
+    //       $this->assertEquals("Please enter a sentence.", $result);
+    //   }
+      function test_case()
       {
           //Arrange
           $test_RepeatCounter = new RepeatCounter;
-          $input1 = "";
-          $input2 = "String";
+          $input1 = "EVan";
+          $input2 = "evan";
 
           //Act
           $result =  $test_RepeatCounter->countRepeats($input1, $input2);
           //
           //Assert
-          $this->assertEquals("Please enter a word to search.", $result);
-      }
-      function test_null_search()
-      {
-          //Arrange
-          $test_RepeatCounter = new RepeatCounter;
-          $input1 = "String";
-          $input2 = "";
-
-          //Act
-          $result =  $test_RepeatCounter->countRepeats($input1, $input2);
-          //
-          //Assert
-          $this->assertEquals("Please enter a sentence.", $result);
+          $this->assertEquals("1", $result);
       }
   }
 ?>
