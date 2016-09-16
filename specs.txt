@@ -1,0 +1,29 @@
+Specs for Word Counter
+
+1. Testing a single letter in a single letter string:
+Input: I, I;
+Output: 1;
+
+2. Testing a single letter in a multi letter string:
+Input: I, I am Evan;
+Output: 1;
+
+3.  Testing a one word string against a multi word string:
+Input: Evan, I am Evan;
+Output 1;
+
+4. Testing a one word string for multiple search hits:
+Input: Evan, Nobody is as Evan as Evan;
+Output: 2;
+
+5 Testing a null input:
+Input: " ", String;
+Output: "Please enter a word to search."
+
+6. Testing a null search field
+Input: String, " ";
+Output: "Please enter a sentence."
+
+7. Testing a case sensitive search:
+Input: EVaN, evan;
+Ouput: 1;
