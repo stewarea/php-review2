@@ -32,5 +32,18 @@
           //Assert
           $this->assertEquals(1, $result);
       }
+      function test_word_against_words()
+      {
+          //Arrange
+          $test_RepeatCounter = new RepeatCounter;
+          $input1 = "Evan";
+          $input2 = "I am Evan";
+
+          //Act
+          $result =  $test_RepeatCounter->countRepeats($input1, $input2);
+          //
+          //Assert
+          $this->assertEquals(1, $result);
+      }
   }
 ?>
