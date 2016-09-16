@@ -17,7 +17,7 @@ Input: Evan, Nobody is as Evan as Evan;
 Output: 2;
 
 5 Testing a null input:
-Input: " ", String;
+Input: "", String;
 Output: "Please enter a word to search."
 
 6. Testing a null search field
